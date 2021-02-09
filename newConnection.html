@@ -22,7 +22,7 @@
     <div class="topnav">
         <nav>
             <ul>
-              <li><a href="newConnection.html">Create Event</a></li>
+              <li><a href="index.html">Events</a></li>
               <li><a href="index.html">Login</a></li>
               <li><a href="index.html">Sign Up</a></li>
             </ul>
@@ -33,7 +33,7 @@
     </div>
     <header class="banner">
         <h1><a href="index.html"><img src="images/uncc.png" height="50" alt="Logo"></a> &emsp;ISSO-UNCC</h1>
-      <p>International Student and Scholar Office at University Of North Carolina at Charlotte</p>
+      <p>International Student Organization</p>
       
 
   <h1>
@@ -42,28 +42,45 @@
     <nav>
       <ul>
         
-        <li><a href="connections.html">Weeks Events</a></li>
+        <li><a href="connections.html">Create an Event</a></li>
 
       </ul>
     </nav>
 
     <main>
       <section>
-        <h2>International Student and Scholar Office at UNC Charlotte</h2>
-        <article>
-          <header>
-            <h3>About ISSO</h3><br>
-            <p>The mission of the International Student and Scholar Office is to provide information, services and programs that help international students and visiting scholars achieve their individual educational and personal goals and that foster an appreciation for a culturally diverse learning environment in the larger University community.</p>
-          </header>
-        </article>
+        <FORM action="http://somesite.com/prog/adduser" method="post">
+            <P>
+            <LABEL for="Topic Name">Topic Name: </LABEL>
+                <INPUT type="text" id="Topic Name"><BR><BR>
+            <LABEL for="Title">Title: </LABEL>
+                      <INPUT type="text" id="Title"><BR><BR>
+            <LABEL for="Host">Host: </LABEL>
+                      <INPUT type="text" id="Host"><BR><BR>
+            <LABEL for="Details">Details: </LABEL>
+                      <INPUT type="text" id="Details"><BR><BR>
+            <LABEL for="Where">Where: </LABEL>
+                      <INPUT type="text" id="Where"><BR><BR>
+            <LABEL for="When">When: </LABEL>
+                      <INPUT type="text" id="When"><BR><BR>
+            <LABEL for="Start Time">Start Time: </LABEL>
+                      <INPUT type="time" id="Start Time"><BR><BR>
+            <LABEL for="End Time">End Time: </LABEL>
+                        <INPUT type="time" id="End Time"><BR><BR>
+            <label for="img">Select image:</label>
+                       <input type="file" id="img" name="img" accept="image/*">
+                       <input type="submit"><br><br>
+            
+            </P>
+         </FORM>
 
-        <article>
-          <header>
-            <h3>Announcements</h3><br>
-            <p>Register for OPT session</p>
-          </header>
-        </article>
+         <a href="connections.html"><input type="submit" value="Create Event", style="float: right;"></a>
+
+        
       </section>
+
+      <!-- <img  src="images/5_Image_CoffeHourHandbill.jpg" alt="coffee" style="width:450px;height:300px;"/>
+      <img  src="images/CulturalAmbassadorLogo.png" alt="cultural" style="width:380px;height:300px;"/> -->
     </main>
 
     <footer>
