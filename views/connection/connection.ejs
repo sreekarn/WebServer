@@ -1,0 +1,30 @@
+<%- include('../partials/header.ejs')%>
+    <main>
+      <section>
+        <h2><%= story.name%></h2><p>&nbsp;</p>
+        
+        <form>
+          <button type="submit" formaction="/connections/<%=story.id%>/update" style="float: right;">Update Event</button>
+          <button type="submit" formmethod="POST" formaction="/connections/<%= story.id%>?_method=DELETE" style="float: right;">Delete</button>
+         </form>
+          
+        <div>
+            <p style="float: left;">
+              <div class="event_image">
+              <img src="/images/<%=story.image%>" height="200" alt="Logo">
+            </div></p><p>&nbsp;</p>
+            <p><b>Hosted By: </b> <%= story.HostedBy%></p><p>&nbsp;</p>
+        <p> <b>Details: </b> <%= story.Details%></p><p>&nbsp;</p>
+        <p><b>Location: </b><%= story.Location%></p><p>&nbsp;</p>
+        <p><b>StartTime: </b><%= story.StartTime%></p><p>&nbsp;</p>
+        <p><b>EndTime: </b><%= story.EndTime%></p><p>&nbsp;</p>
+        </div>
+
+        
+        
+      </section>
+
+      <!-- <img  src="images/5_Image_CoffeHourHandbill.jpg" alt="coffee" style="width:450px;height:300px;"/>
+      <img  src="images/CulturalAmbassadorLogo.png" alt="cultural" style="width:380px;height:300px;"/> -->
+    </main>
+    <%- include("../partials/footer.ejs") %>

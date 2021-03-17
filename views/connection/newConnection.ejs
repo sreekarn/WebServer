@@ -1,0 +1,33 @@
+<%- include('../partials/header.ejs')%>
+    <main>
+      <section>
+        <h2>Create an Event</h2><br><br>
+        <FORM action = '/connections' method = 'POST'>
+            <P>
+            <LABEL for="EventCategory">Event Category:</LABEL>
+                <INPUT type="text" name="EventCategory" id="EventCategory"><BR><BR>
+            <LABEL for="name">Topic Name:</LABEL>
+                <INPUT type="text" name="name" id="name"><BR><BR>
+            <LABEL for="Host">Host:</LABEL>
+                      <INPUT type="text" name="HostedBy" id="HostedBy"><BR><BR>
+            <LABEL for="Details">Details:</LABEL>
+                      <INPUT type="text" name="Details" id="Details"><BR><BR>
+            <LABEL for="Where">Where:</LABEL>
+                      <INPUT type="text" name= "Location" id="Location"><BR><BR>
+            <LABEL for="When">When:</LABEL>
+                      <INPUT type="text" name="date" id="date"><BR><BR>
+            <LABEL for="Start&emspTime">Start Time:</LABEL>
+                      <INPUT type="time" name="StartTime"id="Time"><BR><BR>
+            <LABEL for="End&emspTime">End Time:</LABEL>
+                        <INPUT type="time" name="EndTime" id="End&emspTime"><BR><BR>
+            <label for="img">Select image:</label>
+                       <input type="file" id="img" name="image" accept="image/*"><br><br>
+            <button type="submit">Submit</button>
+            </P>
+         </FORM>      
+      </section>
+      <!-- <img  src="images/5_Image_CoffeHourHandbill.jpg" alt="coffee" style="width:450px;height:300px;"/>
+      <img  src="images/CulturalAmbassadorLogo.png" alt="cultural" style="width:380px;height:300px;"/> -->
+    </main>
+
+    <%- include("../partials/footer.ejs") %>
